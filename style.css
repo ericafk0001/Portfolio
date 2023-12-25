@@ -58,7 +58,12 @@ body {
 
 .name-p {
   margin-top: 100px;
+  margin-bottom: 20px;
   font-size: 75px;
+}
+
+.name-p em {
+  color: rgb(181, 181, 181);
 }
 
 .projects-button {
@@ -79,6 +84,15 @@ body {
   opacity: 30%;
 }
 
-.info-p {
+#info {
   font-size: 25px;
+  margin-top: 5px;
+}
+
+.chess {
+  color: white;
+}
+
+a {
+  text-decoration: none;
 }
