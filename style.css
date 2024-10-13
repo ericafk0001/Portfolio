@@ -1,98 +1,24 @@
-@font-face {
-  font-family: 'Montserrat';
-  src: url('fonts/montserrat/Montserrat-Regular.ttf') format('truetype');
-}
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
 * {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
 }
 
 body {
-  color: white;
+  background-color: rgb(255, 245, 245);
+  color: rgb(62, 62, 62);
+  font-family: "Playfair Display", serif;
+}
+
+h1 {
+  margin-left: 25px;
+  font-size: 150px;
+  font-style: italic;
+}
+
+#pronunciation {
+  opacity: 0.5;
+  font-style: italic;
+  font-size: 36px;
   text-align: center;
-}
-
-body {
-  background: linear-gradient(137deg, #8d0505, #2c3b40, #7db5ed);
-  background-size: 600% 600%;
-
-  -webkit-animation: background 13s ease infinite;
-  -moz-animation: background 13s ease infinite;
-  animation: background 13s ease infinite;
-}
-
-@-webkit-keyframes background {
-  0% {
-    background-position: 0% 25%;
-  }
-  50% {
-    background-position: 100% 76%;
-  }
-  100% {
-    background-position: 0% 25%;
-  }
-}
-@-moz-keyframes background {
-  0% {
-    background-position: 0% 25%;
-  }
-  50% {
-    background-position: 100% 76%;
-  }
-  100% {
-    background-position: 0% 25%;
-  }
-}
-@keyframes background {
-  0% {
-    background-position: 0% 25%;
-  }
-  50% {
-    background-position: 100% 76%;
-  }
-  100% {
-    background-position: 0% 25%;
-  }
-}
-
-.name-p {
-  margin-top: 100px;
-  margin-bottom: 20px;
-  font-size: 75px;
-}
-
-.name-p em {
-  color: rgb(181, 181, 181);
-}
-
-.projects-button {
-  padding: 20px;
-  margin-top: 200px;
-  font-size: large;
-  border-style: none;
-  border-radius: 3px;
-  transition: all 0.5s, opacity 0.2s;
-}
-
-.projects-button:hover {
-  color: white;
-  background-color: black;
-}
-
-.projects-button:active {
-  opacity: 30%;
-}
-
-#info {
-  font-size: 25px;
-  margin-top: 5px;
-}
-
-.chess {
-  color: white;
-}
-
-a {
-  text-decoration: none;
 }
