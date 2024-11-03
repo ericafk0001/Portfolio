@@ -6,40 +6,34 @@
 }
 
 body {
-  background-color: rgb(255, 245, 245);
-  color: rgb(62, 62, 62);
+  background-color: #070707;
+  color: #fffffc; /*rgb(62, 62, 62)*/
   font-family: "Playfair Display", serif;
 }
 
+.name {
+  transition: color 0.8s;
+}
+
+.name:hover {
+  color: #bf0603;
+}
+
 h1 {
-  margin-left: 36px;
   font-size: 150px;
   font-style: italic;
   position: relative;
 }
 
-#pronunciation {
-  opacity: 0.5;
-  font-style: italic;
-  font-size: 36px;
-  text-align: center;
-  position: absolute;
-  top: 165px;
-  left: 660px;
-}
-
 .intro-header {
   display: flex;
-  flex-direction: row;
-  column-gap: 10px;
-  margin-left: 15px;
 }
 
 .intro-link {
   font-size: 36px;
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
-  color: rgb(62, 62, 62);
+  color: #fffffc;
 }
 
 .intro-link:hover {
