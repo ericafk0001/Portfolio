@@ -11,32 +11,71 @@ body {
   font-family: "Playfair Display", serif;
 }
 
-.name {
-  transition: color 0.8s;
-}
-
-.name:hover {
-  color: #bf0603;
-}
-
 h1 {
-  font-size: 150px;
+  font-size: 7.5vw;
   font-style: italic;
-  position: relative;
+  justify-content: center;
 }
 
-.intro-header {
+.nameContainer {
   display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  height: 500px;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.intro-link {
+.name {
+  background-image: linear-gradient(45deg, #8b0000, #ff0000, #dc143c, #800000);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: gradientAnimation 3s linear infinite;
+  animation-direction: alternate;
+  background-size: 300% 100%;
+}
+
+.photo {
+  border-radius: 61% 39% 58% 42% / 60% 76% 24% 40%;
+  width: 100%;
+  max-width: 22vw;
+  margin-right: 145px;
+  margin-top: 180px;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.link {
   font-size: 36px;
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
   color: #fffffc;
+  margin: 15px;
 }
 
-.intro-link:hover {
+.logo {
+  font-size: 36px;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  color: #fffffc;
+  margin: 15px;
+}
+
+.link:hover {
   text-decoration: underline;
 }
 
