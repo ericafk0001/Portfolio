@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles/style.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="styles/scrollBtn.css" />
   </head>
   <body>
     <div>
@@ -16,30 +16,33 @@
           /></a>
         </div>
         <div class="headerLinks">
-          <a href="#skills" class="link">skills</a>
+          <a href="#skillsTitle" class="link">skills</a>
           <a href="projects.html" class="link">projects</a>
           <a href="contact.html" class="link">contact</a>
         </div>
+        <!--https://codepen.io/kotAndy/pen/wPyxMV-->
       </div>
       <div class="nameContainer">
         <h1 class="greeting">Hi, I'm <span class="name">Eric Lin</span></h1>
         <!-- <img src="imgs/cat.jpg" class="photo" /> -->
       </div>
       <div>
-        <img />
-        <p>scroll</p>
+        <a href="#skillsTitle" class="arrow-container">
+          <div class="arrow"></div>
+          <div class="arrow"></div>
+          <div class="arrow"></div>
+        </a>
       </div>
       <div class="intro-desc">
-        <p>I'm a Front end web developer.</p>
-        <div>
-          <p id="#skills">Skills</p>
+        <div id="skillsContainer">
+          <p id="skillsTitle">Skills</p>
           <ul>
-            <li>Javascript</li>
-            <li>Mandarin</li>
-            <li>Assembly</li>
-            <li>C</li>
-            <li>C#</li>
-            <li>C++</li>
+            <li class="skills">Javascript</li>
+            <li class="skills">Mandarin</li>
+            <li class="skills">Assembly</li>
+            <li class="skills">C</li>
+            <li class="skills">C#</li>
+            <li class="skills">C++</li>
           </ul>
         </div>
         <p>
@@ -52,5 +55,6 @@
         </p>
       </div>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>
