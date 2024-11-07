@@ -154,6 +154,12 @@ body {
   text-align: center;
 }
 
+.skillIcons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 100px;
+}
+
 .skills {
-  font-size: 18px;
+  width: 100px;
 }
