@@ -24,12 +24,16 @@ body {
 
 .nameContainer {
   display: flex;
-  flex-direction: row;
+  flex-direction: row; /* Keep the nameContainer in row layout */
   margin-top: 30px;
   height: 500px;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Vertically align items to the center */
   margin-left: 12px;
+}
+
+.greetingWrapper {
+  text-align: center; /* Center the greeting and subtitle */
 }
 
 .name {
@@ -43,14 +47,6 @@ body {
   background-size: 300% 100%;
 }
 
-.photo {
-  border-radius: 61% 39% 58% 42% / 60% 76% 24% 40%;
-  width: 100%;
-  max-width: 22vw;
-  margin-right: 145px;
-  margin-top: 180px;
-}
-
 @keyframes gradientAnimation {
   0% {
     background-position: 0% 50%;
@@ -58,6 +54,33 @@ body {
   100% {
     background-position: 200% 50%;
   }
+}
+
+.icon {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 5px solid red;
+  border-radius: 100%;
+}
+
+.icon::after {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin: 1px 0 0 -6px;
+  display: block;
+  content: "";
+  border: 6px solid transparent;
+  border-top: 10px solid red;
+  border-bottom: none;
+}
+
+.subtitle {
+  margin-top: 10px; /* Add spacing between greeting and subtitle */
+  font-size: 1.2rem;
 }
 
 .header {
