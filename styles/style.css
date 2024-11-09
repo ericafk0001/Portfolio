@@ -182,11 +182,8 @@ body {
   -webkit-filter: grayscale(0);
 }
 
-#projectsContainer {
-  margin-top: 169px;
-}
-
 #projectsTitle {
+  margin-top: 169px;
   font-size: 69px;
   font-weight: 200;
   text-align: center;
