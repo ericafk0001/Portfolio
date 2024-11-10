@@ -192,13 +192,18 @@ body {
 
 #footerContainer {
   height: 340px;
-  border-style: solid;
-  border-width: 2px;
-  border-color: white;
   background-color: #070707;
+  opacity: 1;
+  background-image: radial-gradient(
+    #8c0000 0.8500000000000001px,
+    #070707 0.8500000000000001px
+  );
+  background-size: 17px 17px;
+  border-top: 4px dashed #8c0000;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  align-items: start;
+  justify-content: space-between;
 }
 
 .footerTitles {
@@ -211,6 +216,7 @@ body {
 .aboutme {
   width: 400px;
   font-family: "Indie Flower", cursive;
+  margin: 0px 28px;
 }
 
 .aboutme p {
@@ -220,6 +226,17 @@ body {
 
 .abtme {
   font-size: 36px;
+}
+
+.contact {
+  max-width: 600px;
+  width: 100%;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .contact input {
@@ -275,4 +292,13 @@ form {
 
 .contactBtn:active {
   border-color: rgb(211, 12, 12);
+}
+
+.socials {
+  margin: 0 8%;
+}
+
+.socials-btn img {
+  width: 64px;
+  height: 64px;
 }
