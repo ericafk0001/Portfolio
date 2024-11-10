@@ -28,4 +28,3 @@ document
 console.warn(
   " |\\__/,|   (`\\\r\n |_ _  |.--.) )\r\n ( T   )     /\r\n(((^_(((/(((_/\r\n"
 );
-console.log("credits to andy for the meow meow");
