@@ -201,6 +201,13 @@ body {
   justify-content: space-around;
 }
 
+.footerTitles {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  font-family: "Indie Flower", cursive;
+  font-size: 32px;
+}
+
 .aboutme {
   width: 400px;
   font-family: "Indie Flower", cursive;
@@ -213,13 +220,6 @@ body {
 
 .abtme {
   font-size: 36px;
-}
-
-h2 {
-  margin-top: 6px;
-  margin-bottom: 6px;
-  font-family: "Indie Flower", cursive;
-  font-size: 32px;
 }
 
 .contact input {
