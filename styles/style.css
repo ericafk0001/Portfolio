@@ -210,7 +210,7 @@ body {
   margin-top: 6px;
   margin-bottom: 6px;
   font-family: "Indie Flower", cursive;
-  font-size: 32px;
+  font-size: 36px;
 }
 
 .aboutme {
@@ -221,7 +221,10 @@ body {
 
 .aboutme p {
   font-size: 16px;
+  font-weight: 500;
   line-height: 28px;
+  font-family: "Inter", serif;
+  font-weight: 300;
 }
 
 .abtme {
