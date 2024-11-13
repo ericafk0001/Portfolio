@@ -496,6 +496,10 @@ form {
     text-align: center;
   }
 
+  .nav-link:active {
+    color: #c01919;
+  }
+
   .nav-menu.active {
     left: 0;
   }
