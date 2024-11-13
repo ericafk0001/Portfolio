@@ -1,16 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-html {
-  scroll-behavior: smooth;
-}
-
 * {
+  scroll-behavior: smooth;
   margin: 0;
 }
 
 body {
   background-color: #070707;
-  color: #fffffc; /*rgb(62, 62, 62)*/
+  color: #fffffc;
   font-family: "Inter", serif;
 }
 
@@ -95,6 +92,8 @@ a {
   top: 0;
   z-index: 69;
   margin-top: 8px;
+  margin-left: 12px;
+  margin-right: 12px;
   background: rgba(0, 0, 0, 0.19);
   border-radius: 12px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -165,16 +164,8 @@ a {
   background-color: #fffffc;
 }
 
-.nav-menu {
-}
-
 .nav-item {
   display: none;
-}
-
-.nav-link {
-  text-decoration: none;
-  color: #fffffc;
 }
 
 .nav-item.active {
@@ -358,6 +349,15 @@ form {
   }
 }
 
+@media (max-width: 1285px) {
+  .skillIcons {
+    gap: 60px;
+  }
+  .skills {
+    width: 110px;
+  }
+}
+
 @media (max-width: 1200px) {
   .footerTitles {
     font-size: 32px;
@@ -372,6 +372,15 @@ form {
     width: 40px;
     height: 40px;
     margin: 0px;
+  }
+}
+
+@media (max-width: 1057px) {
+  .skillIcons {
+    gap: 50px;
+  }
+  .skills {
+    width: 90px;
   }
 }
 
@@ -391,7 +400,23 @@ form {
   }
 }
 
+@media (max-width: 875px) {
+  .skillIcons {
+    gap: 30px;
+  }
+  .skills {
+    width: 85px;
+  }
+}
+
 @media (max-width: 768px) {
+  .skillIcons {
+    gap: 25px;
+  }
+  .skills {
+    width: 80px;
+  }
+
   .socials-btn img {
     width: 32px;
     height: 32px;
@@ -440,12 +465,13 @@ form {
   }
 
   .nav-menu {
+    box-sizing: border-box;
     position: fixed;
     left: -115%;
     top: 105px;
     gap: 0;
     flex-direction: column;
-    width: 89%;
+    width: 100%;
     transition: 0.25s;
     border-radius: 8px;
     border-width: 1px;
@@ -453,10 +479,21 @@ form {
     border-style: solid;
     background-color: #0f0f0f;
     overflow: hidden;
+    padding-left: 0px;
   }
 
   .nav-item {
-    margin: 16px 0;
+    margin: 8px 0;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fffffc;
+    display: block;
+    padding: 18px 0px;
+    text-align: center;
   }
 
   .nav-menu.active {
@@ -464,7 +501,22 @@ form {
   }
 }
 
+@media (max-width: 669px) {
+  .skillIcons {
+    gap: 20px;
+  }
+  .skills {
+    width: 70px;
+  }
+}
 @media (max-width: 576px) {
+  .skillIcons {
+    gap: 10px;
+  }
+  .skills {
+    width: 60px;
+  }
+
   .greeting {
     font-size: 14vw;
   }
@@ -477,5 +529,14 @@ form {
     font-size: 12px;
     font-weight: 400;
     line-height: 15px;
+  }
+}
+
+@media (max-width: 464px) {
+  .skillIcons {
+    gap: 10px;
+  }
+  .skills {
+    width: 50px;
   }
 }
