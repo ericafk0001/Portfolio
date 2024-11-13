@@ -14,6 +14,10 @@ body {
   font-family: "Inter", serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .greeting {
   font-size: 7vw;
   font-family: "Inter", serif;
@@ -182,7 +186,7 @@ body {
 }
 
 #skillsContainer {
-  margin-top: 269px;
+  margin-top: 420px;
 }
 
 #skillsTitle {
@@ -193,16 +197,18 @@ body {
 }
 
 .skillIcons {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 80px;
   margin-top: 100px;
   width: 60%;
   margin-left: auto;
   margin-right: auto;
+  justify-items: center;
 }
 
 .skills {
-  width: 100px;
+  width: 130px;
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
   transition: all 0.4s;
@@ -213,16 +219,8 @@ body {
   -webkit-filter: grayscale(0);
 }
 
-#projectsTitle {
-  margin-top: 169px;
-  font-size: 69px;
-  font-weight: 200;
-  text-align: center;
-  text-shadow: 0px 0px 4px #ce0e0e;
-}
-
 #footerContainer {
-  height: 340px;
+  height: 350px;
   background-color: #070707;
   opacity: 1;
   background-image: radial-gradient(
@@ -312,6 +310,7 @@ form {
   background-color: #070707;
   color: white;
   margin-top: 10px;
+  margin-bottom: 8px;
   padding: 12px;
   font-size: 16px;
   cursor: pointer;
@@ -337,10 +336,20 @@ form {
   width: 64px;
   height: 64px;
   transition: all 0.25s;
+  margin: 0 10px;
+  filter: brightness(0) invert(1); /*make image white*/
 }
 
 .socials-btn img:hover {
   opacity: 0.6;
+}
+
+@media (max-width: 1479px) {
+  .socials-btn img {
+    width: 45px;
+    height: 45px;
+    margin: 0 2px;
+  }
 }
 
 @media (max-width: 1400px) {
@@ -357,6 +366,12 @@ form {
   .aboutme p {
     font-size: 14px;
     line-height: 24px;
+  }
+
+  .socials-btn img {
+    width: 40px;
+    height: 40px;
+    margin: 0px;
   }
 }
 
@@ -377,6 +392,31 @@ form {
 }
 
 @media (max-width: 768px) {
+  .socials-btn img {
+    width: 32px;
+    height: 32px;
+    margin: 0px;
+  }
+
+  .contact input {
+    padding: 5px;
+  }
+
+  .contactBtn {
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .footerTitles {
+    font-size: 26px;
+  }
+
+  .aboutme p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+
   .subtitle {
     font-size: 14px;
   }
