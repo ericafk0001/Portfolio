@@ -54,3 +54,15 @@
   opacity: 0.9;
   top: 75%;
 }
+
+@media (max-height: 800px) {
+  .arrow-container {
+    margin-top: 300px;
+  }
+}
+
+@media (max-height: 585px) {
+  .arrow-container {
+    margin-top: 400px;
+  }
+}

@@ -463,3 +463,19 @@ form {
     left: 0;
   }
 }
+
+@media (max-width: 576px) {
+  .greeting {
+    font-size: 14vw;
+  }
+
+  .footerTitles {
+    font-size: 24px;
+  }
+
+  .aboutme p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+  }
+}
