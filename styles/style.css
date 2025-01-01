@@ -89,11 +89,11 @@ a {
   flex-direction: row;
   justify-content: space-between;
   position: sticky;
-  top: 0;
-  z-index: 69;
-  margin-top: 8px;
+  top: 8px;
   margin-left: 12px;
   margin-right: 12px;
+  z-index: 69;
+  padding: 4px 6px;
   background: rgba(0, 0, 0, 0.19);
   border-radius: 12px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
