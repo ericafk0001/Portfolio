@@ -43,6 +43,32 @@ document
     });
   });
 
+const form = document.getElementById("contactForm");
+const successMessage = document.getElementById("successMessage");
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  try {
+    const response = await fetch(form.action, {
+      method: "POST",
+      body: new FormData(form),
+      headers: {
+        Accept: "application/json",
+      },
+    });
+
+    if (response.ok) {
+      form.reset();
+      form.style.display = "none";
+      successMessage.style.display = "block";
+    }
+  } catch (error) {
+    console.error("Error:", error);
+    alert.error("Something went wrong. Please try again later.");
+  }
+});
+
 console.warn(
   " |\\__/,|   (`\\\r\n |_ _  |.--.) )\r\n ( T   )     /\r\n(((^_(((/(((_/\r\n"
 );

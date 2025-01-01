@@ -218,7 +218,16 @@
           </div>
           <div class="contact">
             <h2 class="footerTitles">Get in touch!</h2>
-            <form action="https://formspree.io/f/myzyjzge" method="POST">
+            <div id="successMessage" style="display: none">
+              <h3>Thank you for your message!</h3>
+              <p>I'll get back to you soon.</p>
+            </div>
+            <form
+              id="contactForm"
+              action="https://formspree.io/f/myzyjzge"
+              method="POST"
+              data-form
+            >
               <input
                 type="text"
                 name="first"
